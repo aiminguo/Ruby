@@ -5,5 +5,5 @@ Reverse linked list in both recursive solution and non-recursive solution, and u
 Get nth prime number from cache.
 
 ##rspect_watir.rb:
-Drive end to end integration web app. test with RSpec and Watir.
+Drive end to end integration web application test with RSpec and Watir.
 
