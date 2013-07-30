@@ -23,7 +23,7 @@ class UserController < ApplicationController
     collection = @db['Users']
     user = collection.find_one( { 'LoginName' => login, 'AccountStatus' => 'Active', 'UserStatus' => 'Active'})
     if user.nil?
-      render json: ERROR_LOGIN_NOT_EXIST, status: :not_found, callback: params[:callback] #?jsonp=parseResponse
+      render json: ERROR_LOGIN_NOT_EXIST, status: :not_found, callback: params[:callback] #?jsonp ?callback=json_callback
       return nil, nil, nil
     end
     return user['UserId'], user['ProfileId'], user['ProfileType']    
